@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('display s3 buckets') {
+            steps {
+                sh 'aws s3 ls'
+            }
+        }
+    }
+}
