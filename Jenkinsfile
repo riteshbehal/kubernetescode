@@ -7,7 +7,7 @@ node {
     }
 
     stage('Build Image') {
-        app = docker.build("dockercorona/dgfversion1")
+        app = docker.build("dockercorona/test")
     }
 
     stage('Test Image') {
